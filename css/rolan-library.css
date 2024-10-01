@@ -1,0 +1,54 @@
+/* Rolan CSS Library */
+
+/* Основные переменные */
+:root {
+    --rolan-primary-color: #6a5acd;
+    --rolan-secondary-color: #00bfff;
+    --rolan-font-family: 'Arial', sans-serif;
+    --rolan-border-radius: 8px;
+    --rolan-transition-speed: 0.3s;
+  }
+  
+  /* Базовые стили для страницы, если они понадобятся */
+  body {
+    font-family: var(--rolan-font-family);
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стили для кнопки */
+  .rolan-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: var(--rolan-border-radius);
+    border: none;
+    cursor: pointer;
+    transition: all var(--rolan-transition-speed) ease;
+    text-transform: uppercase;
+  }
+  
+  .rolan-btn-primary {
+    background: linear-gradient(135deg, var(--rolan-primary-color), var(--rolan-secondary-color));
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rolan-btn-primary:hover {
+    background: linear-gradient(135deg, var(--rolan-secondary-color), var(--rolan-primary-color));
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Пример других стилей, которые можно добавить */
+  .rolan-btn-secondary {
+    background-color: var(--rolan-secondary-color);
+    color: white;
+  }
+  
+  .rolan-btn-secondary:hover {
+    background-color: var(--rolan-primary-color);
+    color: white;
+  }
+  
